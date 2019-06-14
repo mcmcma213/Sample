@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ImaseLib">
+      <UniqueIdentifier>{f87ff8c5-44e2-4b24-a72d-77bd88987530}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Props">
+      <UniqueIdentifier>{ad832af1-264d-46ed-854d-cf6f6202c082}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\Fonts">
+      <UniqueIdentifier>{049c2613-1586-406d-a1bf-9b0f51070bbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\Textures">
+      <UniqueIdentifier>{0928637d-ec34-4f71-afd9-b8bf9b67c6f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\Icon">
+      <UniqueIdentifier>{56cb824a-f352-484f-83dc-9eab50d0bf48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  
+  <!-- ソースファイル -->
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="ImaseLib\DebugCamera.cpp"> <Filter>ImaseLib</Filter> </ClCompile>
+    <ClCompile Include="ImaseLib\Direct3D.cpp">    <Filter>ImaseLib</Filter> </ClCompile>
+    <ClCompile Include="ImaseLib\DirectXTK.cpp">   <Filter>ImaseLib</Filter> </ClCompile>
+    <ClCompile Include="ImaseLib\FPSTimer.cpp">    <Filter>ImaseLib</Filter> </ClCompile>
+    <ClCompile Include="ImaseLib\Grid.cpp">        <Filter>ImaseLib</Filter> </ClCompile>
+    <ClCompile Include="ImaseLib\Line.cpp">        <Filter>ImaseLib</Filter> </ClCompile>
+    <ClCompile Include="ImaseLib\Texture.cpp">     <Filter>ImaseLib</Filter> </ClCompile>
+  </ItemGroup>
+  
+  <!-- ヘッダファイル -->
+  <ItemGroup>
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="ImaseLib\DebugCamera.h"> <Filter>ImaseLib</Filter> </ClInclude>
+    <ClInclude Include="ImaseLib\Direct3D.h">    <Filter>ImaseLib</Filter> </ClInclude>
+    <ClInclude Include="ImaseLib\DirectXTK.h">   <Filter>ImaseLib</Filter> </ClInclude>
+    <ClInclude Include="ImaseLib\FPSTimer.h">    <Filter>ImaseLib</Filter> </ClInclude>
+    <ClInclude Include="ImaseLib\Grid.h">        <Filter>ImaseLib</Filter> </ClInclude>
+    <ClInclude Include="ImaseLib\Line.h">        <Filter>ImaseLib</Filter> </ClInclude>
+    <ClInclude Include="ImaseLib\Texture.h">     <Filter>ImaseLib</Filter> </ClInclude>
+  </ItemGroup>
+  
+  <!-- プロパティファイル -->
+  <ItemGroup>
+    <None Include="Props\3D_Programming.props"> <Filter>Props</Filter> </None>
+  </ItemGroup>
+  
+  <!-- リソースファイル -->
+  <ItemGroup>
+    <None            Include="Resources\Fonts\myfile.spritefont">  <Filter>リソース ファイル\Fonts</Filter>    </None>
+    <Image           Include="Resources\Textures\TridentLogo.png"> <Filter>リソース ファイル\Textures</Filter> </Image>
+    <ClInclude       Include="Resources\Icon\Icon.h">              <Filter>リソース ファイル\Icon</Filter>     </ClInclude>
+    <Image           Include="Resources\Icon\Icon.ico">            <Filter>リソース ファイル\Icon</Filter>     </Image>
+    <ResourceCompile Include="Resources\Icon\Icon.rc">             <Filter>リソース ファイル\Icon</Filter>     </ResourceCompile>
+  </ItemGroup>
+</Project>

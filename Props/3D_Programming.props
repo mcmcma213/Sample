@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+
+  <!-- 表示名 -->
+  <PropertyGroup>
+    <_PropertySheetDisplayName>3D Programming</_PropertySheetDisplayName>
+  </PropertyGroup>
+
+  <!-- 共有設定 -->
+  <PropertyGroup>
+    <IncludePath>C:\DirectXTK\Inc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+
+  <!-- Debug設定 -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>C:\DirectXTK\Bin\Desktop_2015\Win32\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+
+  <!-- Release設定 -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>C:\DirectXTK\Bin\Desktop_2015\Win32\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+
+  <ItemGroup />
+</Project>
